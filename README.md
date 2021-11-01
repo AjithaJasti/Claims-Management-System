@@ -14,28 +14,32 @@ There are five modules:
 4. Policy Service
 5. Portal Service
 
-Authorization Service
+<b> Authorization Service </b>
+
     -   Creates JWT
     -   The token gets expired after specific amount of time
     -   Sets the token inside the session
     
-Claims Module 
+<b> Claims Module </b>
 
     -   Middleware Microservice that performs following operations: 
     -   Get Claim Status 
     -   Validate Eligibility of Claim and Action Settlement
 
-Member Service
+<b>Member Service </b>
+
     -  View Bills 
     -  Submit Claim 
     -  View Claim Status
 
-Policy Service
+<b>Policy Service </b>
+
     -   Get Chain of Permissible Providers (Hospitals) 
     -   Get Benefits permissible under a policy 
     -   Get Acceptable Claim Amount per benefit, per policy
 
-Portal Service
+<b>Portal Service </b>
+
     -   It allows member to Login and allows to do following operations: 
               Login 
               View Current Bill Status, Next Due 
