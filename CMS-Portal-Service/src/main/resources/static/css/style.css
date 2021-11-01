@@ -1,0 +1,28 @@
+body {
+	background:white;
+}
+
+div ul {
+	margin-left: auto;
+}
+
+.bg-primary1 {
+	background:#98FBcf;
+}
+
+.banner {
+	width: 100%;
+	height: 93vh; 
+	
+	background:url(../img/wave.png);
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	color:	#414a4c;
+	
+}
+
+.my-card {
+	padding: 20px;
+	background: #FFFFFF;
+}

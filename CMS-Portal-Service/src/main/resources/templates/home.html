@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>This is home page</title>
+</head>
+<body>
+	<section
+		class="banner d-flex justify-content-center align-items-center">
+		<div class="text-center">
+			<h1>Claims Management System</h1>
+			<p>Manage all your Claims and Settlements all in one Place.</p>
+			<a th:href="@{/memberHome}"><button class="btn bg-primary1 btn-lg text-white" >Member Portal</button></a>
+		</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>This is home page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<style>
+#aa{
+	color: black;
+}
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary1">
+		<div class="container-fluid">
+			<a id="aa"class="navbar-brand" th:href="@{/}">Claims Management System</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
+	<div class="container">
+		<br>
+		<br>
+		<h1>Member Portal Service</h1>
+		<hr>
+		<h2>Submit Claim Here</h2>
+
+		<form action="#" onsubmit="abc()" th:action="@{/submitClaim}" th:object="${memberSubmitClaim}" method="POST">
+			<input type="text" th:field="*{policyId}" placeholder="Enter Policy Id" class="form-control mb-4 col-4"
+				required />
+
+			<input type="text" th:field="*{memberId}" placeholder="Enter Member Id" class="form-control mb-4 col-4"
+				required />
+
+			<input type="text" th:field="*{hospitalId}" placeholder="Enter hospital Id" class="form-control mb-4 col-4"
+				required />
+
+			<input type="text" th:field="*{totalBill}" placeholder="Enter total bill" class="form-control mb-4 col-4"
+				required />
+
+			<input type="text" th:field="*{totalClaimedAmt}" placeholder="Enter your Claim Amount"
+				class="form-control mb-4 col-4" required />
+
+			<button type="submit" class="btn btn-info col-2">Submit
+				Claim</button>
+		</form>
+		<hr>
+		<a th:href="@{/memberHome}"> Back to Member Portal</a>
+	</div>
+	<script>
+		function abc() {
+				alert("your claim is successfully sumitted, you will receive your calim id.");	
+		}
+	</script>
+
+</body>
+
+</html>

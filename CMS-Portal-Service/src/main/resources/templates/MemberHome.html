@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Member Home Page</title>
+<style>
+#abc{
+  background-image: url("/img/wave.png");
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  margin-left: -10%;
+}
+#center{
+	margin-left:50%;
+	margin-top:10%;
+}
+#size{
+	font-size:80px;
+	margin-left:-20%;
+	margin-top:-15%;	
+	margin-bottom:8%;
+	color:lightgreen;
+}
+.abc{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#aa{
+	color:black;
+}
+</style>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary1">
+		<div class="container-fluid">
+			<a id="aa" class="navbar-brand" th:href="@{/}">Claims Management System</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="navbar-nav ml-auto mb-2 mb-lg-0 text-uppercase">
+					<li class="nav-item"><a id="aa" class="nav-link active"
+						aria-current="page" th:href="@{/}">Home</a></li>
+
+					<li class="nav-item"><a id="aa" class="nav-link" th:href="@{/about}"
+						href="#">About</a></li>
+					<li class="nav-item"><a id="aa" class="nav-link " th:href="@{/logout}"
+						href="#" tabindex="-1" aria-disabled="true">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="abc">
+	<div class="container">
+		</br>
+		<div id="center">
+		<h1 id="size"><u>Member Portal</u></h1>
+		<div class="btn-group-vertical">
+			<a class="btn btn-outline-success abc" th:href="@{/showClaimPage}" role="button"
+				aria-current="page">Submit Claim</a> </br> <a class="btn btn-outline-success"
+				th:href="@{/showClaimSubmit}" role="button" aria-current="page">View
+				Claim Status</a> </br> <a class="btn btn-outline-success"
+				th:href="@{/showViewBillPage}" role="button" aria-current="page">View
+				Bill Details</a> </br> <a class="btn btn-outline-success"
+				th:href="@{/showProviderPolicySubmit}" role="button"
+				aria-current="page">Policy Provider Details</a> </br><br></br><br></br><br></br><br></br><br><br>
+		</div>
+		</div>
+	</div>
+	</div>
+
+
+
+
+</body>
+</html>
