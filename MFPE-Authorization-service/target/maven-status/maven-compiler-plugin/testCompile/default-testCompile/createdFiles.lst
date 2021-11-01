@@ -1,0 +1,6 @@
+com\cognizant\authorization\model\UserTokenTest.class
+com\cognizant\authorization\model\ErrorResponseTest.class
+com\cognizant\authorization\AuthorizationServiceApplicationTests.class
+com\cognizant\authorization\model\MyUserTest.class
+com\cognizant\authorization\model\JwtResponseTest.class
+com\cognizant\authorization\model\TestUserLoginCredential.class

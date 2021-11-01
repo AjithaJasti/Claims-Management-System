@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.cognizant.authorization.controller.JwtAuthenticationControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.103 s <<< FAILURE! - in com.cognizant.authorization.controller.JwtAuthenticationControllerTest
+testLogin  Time elapsed: 0.068 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.cognizant.authorization.controller.JwtAuthenticationControllerTest.testLogin(JwtAuthenticationControllerTest.java:35)
+
+testGetValidity  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Not yet implemented
+	at com.cognizant.authorization.controller.JwtAuthenticationControllerTest.testGetValidity(JwtAuthenticationControllerTest.java:40)
+
