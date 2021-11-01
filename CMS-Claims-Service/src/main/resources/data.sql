@@ -1,0 +1,5 @@
+INSERT INTO `claimstatus` (`claimstatus_id`, `claim_id`, `claim_status`, `member_id`, `policy_id`, `status_des`) VALUES ('101', '1001', 'yes', '181', '1', 'Pending');
+INSERT INTO `claimstatus` (`claimstatus_id`, `claim_id`, `claim_status`, `member_id`, `policy_id`, `status_des`) VALUES ('102', '1002', 'yes', '201', '2', 'Pending');
+INSERT INTO `claimstatus` (`claimstatus_id`, `claim_id`, `claim_status`, `member_id`, `policy_id`, `status_des`) VALUES ('103', '1003', 'yes', '163', '3', 'Pending');
+INSERT INTO `claimstatus` (`claimstatus_id`, `claim_id`, `claim_status`, `member_id`, `policy_id`, `status_des`) VALUES ('104', '1004', 'yes', '289', '4', 'Aprroved');
+INSERT INTO `claimstatus` (`claimstatus_id`, `claim_id`, `claim_status`, `member_id`, `policy_id`, `status_des`) VALUES ('105', '1005', 'yes', '63', '5', 'Approved');
